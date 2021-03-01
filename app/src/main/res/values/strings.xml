@@ -4,16 +4,11 @@
     <string name="description">Home of the most wonderful desserts ever seen (and tested) by the human being.</string>
     <string name="get_started">Get started!</string>
 
-
-    <!-- fonts families -->
     <string name="light">sans-serif-light</string>
     <string name="condensed">sans-serif-condensed</string>
     <string name="thin">sans-serif-thin</string>
     <string name="medium">sans-serif-medium</string>
     <string name="regular">sans-serif</string>
-
-
-    <!-- register fields -->
 
     <string name="name">Name</string>
     <string name="last_name">Last name</string>
@@ -23,10 +18,6 @@
         terms and conditions of the Cheezery</string>
     <string name="sign_in">Sign in</string>
 
-    <!-- end of fields -->
-
-
-    <!-- menu -->
     <string name="our_menu">Our menu</string>
     <string name="cold_drinks">Cold drinks </string>
     <string name="hot_drinks">Hot drinks</string>
@@ -34,8 +25,6 @@
     <string name="salties">Salties</string>
     <string name="combos">Combos</string>
     <string name="personalized">Personalized</string>
-
-    <!--End of menu strings-->
 
 
 </resources>
