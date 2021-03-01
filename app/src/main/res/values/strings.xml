@@ -4,6 +4,7 @@
     <string name="description">Home of the most wonderful desserts ever seen (and tested) by the human being.</string>
     <string name="get_started">Get started!</string>
 
+
     <!-- fonts families -->
     <string name="light">sans-serif-light</string>
     <string name="condensed">sans-serif-condensed</string>

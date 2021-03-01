@@ -44,6 +44,6 @@
         android:text="$7"
         android:id="@+id/product_price"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="20dp"
-        />
+        android:layout_marginLeft="20dp"/>
+
 </LinearLayout>

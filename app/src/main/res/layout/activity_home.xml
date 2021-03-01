@@ -23,8 +23,7 @@
         android:textAllCaps="true"
         android:layout_gravity="center"
         android:textSize="20sp"
-        android:layout_marginTop="10dp"
-        />
+        android:layout_marginTop="10dp"/>
 
     <GridLayout
         android:layout_width="match_parent"
@@ -41,8 +40,7 @@
             android:background="@drawable/first_gradient"
             android:layout_marginRight="2dp"
             android:textSize="@dimen/buttonText"
-            android:paddingVertical="@dimen/paddingButton"
-            />
+            android:paddingVertical="@dimen/paddingButton"/>
 
         <Button
             android:id="@+id/button_hotdrinks"
@@ -52,8 +50,7 @@
             android:background="@drawable/first_gradient"
             android:layout_marginLeft="2dp"
             android:textSize="@dimen/buttonText"
-            android:paddingVertical="@dimen/paddingButton"
-            />
+            android:paddingVertical="@dimen/paddingButton"/>
         <Button
             android:id="@+id/button_sweets"
             android:text="@string/sweets"
@@ -65,8 +62,7 @@
             android:layout_marginLeft="2dp"
             android:layout_gravity="fill_horizontal"
             android:textSize="@dimen/buttonText"
-            android:paddingVertical="@dimen/paddingButton"
-            />
+            android:paddingVertical="@dimen/paddingButton"/>
         <Button
             android:id="@+id/button_salties"
             android:text="@string/salties"
@@ -76,9 +72,7 @@
             android:layout_marginLeft="2dp"
             android:layout_marginTop="4dp"
             android:textSize="@dimen/buttonText"
-            android:paddingVertical="@dimen/paddingButton"
-
-            />
+            android:paddingVertical="@dimen/paddingButton"/>
         <Button
             android:text="@string/combos"
             android:fontFamily="@string/light"
@@ -88,8 +82,7 @@
             android:layout_marginTop="4dp"
             android:layout_gravity="fill_horizontal"
             android:textSize="@dimen/buttonText"
-            android:paddingVertical="@dimen/paddingButton"
-            />
+            android:paddingVertical="@dimen/paddingButton"/>
 
         <Button
             android:text="@string/personalized"
@@ -99,13 +92,8 @@
             android:layout_marginLeft="2dp"
             android:layout_marginTop="4dp"
             android:textSize="@dimen/buttonText"
-            android:paddingVertical="@dimen/paddingButton"
-            />
-
-
+            android:paddingVertical="@dimen/paddingButton"/>
 
     </GridLayout>
-
-
 
 </LinearLayout>

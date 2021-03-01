@@ -61,24 +61,24 @@ class Products : AppCompatActivity() {
             2 ->{
                 coldDrinks.clear()
                 coldDrinks.add(Product("Americano", R.drawable.americano,"Cafe Americano", 5))
-                coldDrinks.add(Product("Latte", R.drawable.latte,"Cafe Americano", 7))
-                coldDrinks.add(Product("Espresso", R.drawable.espresso,"Cafe Americano", 4))
-                coldDrinks.add(Product("HotChocolate", R.drawable.hotchocolate,"Cafe Americano", 5))
+                coldDrinks.add(Product("Latte", R.drawable.latte,"Latte", 7))
+                coldDrinks.add(Product("Espresso", R.drawable.espresso,"Espresso", 4))
+                coldDrinks.add(Product("HotChocolate", R.drawable.hotchocolate,"Choco Caliente", 5))
             }
             3->{
                 coldDrinks.clear()
-                coldDrinks.add(Product("BlueBerryCake",R.drawable.blueberrycake, "Blue Berry como jijos no", 7))
-                coldDrinks.add(Product("RedvelvetCake",R.drawable.redvelvetcake, "Blue Berry como jijos no", 7))
-                coldDrinks.add(Product("StrawBerryCheeseCake",R.drawable.strawberrycheesecake, "Blue Berry como jijos no", 7))
-                coldDrinks.add(Product("Tiramisu",R.drawable.tiramisu, "Blue Berry como jijos no", 7))
+                coldDrinks.add(Product("BlueBerryCake",R.drawable.blueberrycake, "Cake sabor a BlueBerry", 13))
+                coldDrinks.add(Product("RedvelvetCake",R.drawable.redvelvetcake, "Cake sabor a RedVelvet", 6))
+                coldDrinks.add(Product("StrawBerryCheeseCake",R.drawable.strawberrycheesecake, "StrawBerryCheesseCake", 7))
+                coldDrinks.add(Product("Tiramisu",R.drawable.tiramisu, "Tiramisu", 4))
             }
 
             4->{
                 coldDrinks.clear()
-                coldDrinks.add(Product("ChickenCrepes",R.drawable.chickencrepes, "Blue Berry como jijos no", 7))
-                coldDrinks.add(Product("Hampaini",R.drawable.hampanini, "Blue Berry como jijos no", 7))
-                coldDrinks.add(Product("Nachos",R.drawable.nachos, "Blue Berry como jijos no", 7))
-                coldDrinks.add(Product("PhillyCheesesteak",R.drawable.phillycheesesteak, "Blue Berry como jijos no", 7))
+                coldDrinks.add(Product("ChickenCrepes",R.drawable.chickencrepes, "ChickenCrepes", 3))
+                coldDrinks.add(Product("Hampaini",R.drawable.hampanini, "Hampaini", 4))
+                coldDrinks.add(Product("Nachos",R.drawable.nachos, "Nachos", 7))
+                coldDrinks.add(Product("PhillyCheesesteak",R.drawable.phillycheesesteak, "PhillyCheesesteak", 6))
             }
 
         }
