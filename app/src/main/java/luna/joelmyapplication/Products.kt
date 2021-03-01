@@ -11,10 +11,9 @@ import kotlinx.android.synthetic.main.activity_products.*
 import kotlinx.android.synthetic.main.item_product.view.*
 
 class Products : AppCompatActivity() {
+
     var coldDrinks =  ArrayList<Product>()
-   /* var hotDrinks = ArrayList<Product>()
-    var sweets = ArrayList<Product>()
-    var salties = ArrayList<Product>()*/
+    var opcion = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,84 +26,63 @@ class Products : AppCompatActivity() {
 
             when(type){
                 "hotDrinks"->{
-                    coldDrinks.add(Product("Americano", R.drawable.americano,"Cafe Americano", 5))
-                    coldDrinks.add(Product("Latte", R.drawable.latte,"Cafe Americano", 7))
-                    coldDrinks.add(Product("Espresso", R.drawable.espresso,"Cafe Americano", 4))
-                    coldDrinks.add(Product("HotChocolate", R.drawable.hotchocolate,"Cafe Americano", 5))
+                    cargarColdDrinks(2)
                 }
-
-
                 "coldDrinks"->{
-                    coldDrinks.add(Product("Caramel Frap", R.drawable.caramelfrap, "Caramel syrup meets coffee, milk and ice and whipped cream and buttery caramel sauce layer the love on top.", 5))
-                    coldDrinks.add(Product("Chocolate Frap", R.drawable.chocolatefrap, "Rich mocha-flavored sauce meets up with chocolaty chips, milk and ice for a blender bash.",6))
-                    coldDrinks.add(Product("Cold Brew", R.drawable.coldbrew, "Created by steeping medium-to-coarse ground coffee in room temperature water for 12 hours or longer.", 3))
-                    coldDrinks.add(Product("Matcha Latte", R.drawable.matcha, "Leafy taste of matcha green tea powder with creamy milk and a little sugar for a flavor balance that will leave you feeling ready and raring to go.", 4))
-                    coldDrinks.add(Product("Oreo Milkshake", R.drawable.oreomilkshake, "Chocolate ice cream, and oreo cookies. Topped with whipped cream with cocoa and chocolate syrup.", 7))
-                    coldDrinks.add(Product("Peanut Milkshake", R.drawable.peanutmilkshake, "Vanilla ice cream, mixed with peanut butter and chocolate.", 7))
-
+                    cargarColdDrinks(1)
                 }
-
                 "sweets"->{
-                    coldDrinks.add(Product("BlueBerryCake",R.drawable.blueberrycake, "Blue Berry como jijos no", 7))
-                    coldDrinks.add(Product("RedvelvetCake",R.drawable.redvelvetcake, "Blue Berry como jijos no", 7))
-                    coldDrinks.add(Product("StrawBerryCheeseCake",R.drawable.strawberrycheesecake, "Blue Berry como jijos no", 7))
-                    coldDrinks.add(Product("Tiramisu",R.drawable.tiramisu, "Blue Berry como jijos no", 7))
+                    cargarColdDrinks(3)
                 }
-
                 "salties"->{
-                    coldDrinks.add(Product("ChickenCrepes",R.drawable.chickencrepes, "Blue Berry como jijos no", 7))
-                    coldDrinks.add(Product("Hampaini",R.drawable.hampanini, "Blue Berry como jijos no", 7))
-                    coldDrinks.add(Product("Nachos",R.drawable.nachos, "Blue Berry como jijos no", 7))
-                    coldDrinks.add(Product("PhillyCheesesteak",R.drawable.phillycheesesteak, "Blue Berry como jijos no", 7))
-
-            }
+                    cargarColdDrinks(4)
+                }
             }
         }
-/*
-        cargarHotDrinks()
-
-        cargarSweets()
-
-        cargarSalties()*/
+        cargarColdDrinks(opcion)
 
         var adaptador = AdapadorProdutcto(this, coldDrinks)
-       /* AdapadorProdutcto(this, hotDrinks)
-        AdapadorProdutcto(this, sweets)
-        AdapadorProdutcto(this, salties)*/
         list_products.adapter = adaptador
 
     }
-/*
-    fun cargarSalties(){
-        salties.add(Product("ChickenCrepes",R.drawable.chickencrepes, "Blue Berry como jijos no", 7))
-        salties.add(Product("Hampaini",R.drawable.hampanini, "Blue Berry como jijos no", 7))
-        salties.add(Product("Nachos",R.drawable.nachos, "Blue Berry como jijos no", 7))
-        salties.add(Product("PhillyCheesesteak",R.drawable.phillycheesesteak, "Blue Berry como jijos no", 7))
-    }
-    fun cargarSweets(){
-        sweets.add(Product("BlueBerryCake",R.drawable.blueberrycake, "Blue Berry como jijos no", 7))
-        sweets.add(Product("RedvelvetCake",R.drawable.redvelvetcake, "Blue Berry como jijos no", 7))
-        sweets.add(Product("StrawBerryCheeseCake",R.drawable.strawberrycheesecake, "Blue Berry como jijos no", 7))
-        sweets.add(Product("Tiramisu",R.drawable.tiramisu, "Blue Berry como jijos no", 7))
-    }
-    fun cargarHotDrinks(){
-        hotDrinks.add(Product("Americano", R.drawable.americano,"Cafe Americano", 5))
-        hotDrinks.add(Product("Latte", R.drawable.latte,"Cafe Americano", 7))
-        hotDrinks.add(Product("Espresso", R.drawable.espresso,"Cafe Americano", 4))
-        hotDrinks.add(Product("HotChocolate", R.drawable.hotchocolate,"Cafe Americano", 5))
-    }
 
- */
-   /* fun cargarColdDrinks(){
+    fun cargarColdDrinks(opcion: Int){
 
-        coldDrinks.add(Product("Caramel Frap", R.drawable.caramelfrap, "Caramel syrup meets coffee, milk and ice and whipped cream and buttery caramel sauce layer the love on top.", 5))
-        coldDrinks.add(Product("Chocolate Frap", R.drawable.chocolatefrap, "Rich mocha-flavored sauce meets up with chocolaty chips, milk and ice for a blender bash.",6))
-        coldDrinks.add(Product("Cold Brew", R.drawable.coldbrew, "Created by steeping medium-to-coarse ground coffee in room temperature water for 12 hours or longer.", 3))
-        coldDrinks.add(Product("Matcha Latte", R.drawable.matcha, "Leafy taste of matcha green tea powder with creamy milk and a little sugar for a flavor balance that will leave you feeling ready and raring to go.", 4))
-        coldDrinks.add(Product("Oreo Milkshake", R.drawable.oreomilkshake, "Chocolate ice cream, and oreo cookies. Topped with whipped cream with cocoa and chocolate syrup.", 7))
-        coldDrinks.add(Product("Peanut Milkshake", R.drawable.peanutmilkshake, "Vanilla ice cream, mixed with peanut butter and chocolate.", 7))
+        when(opcion){
+            1 ->{
+                coldDrinks.clear()
+                coldDrinks.add(Product("Caramel Frap", R.drawable.caramelfrap, "Caramel syrup meets coffee, milk and ice and whipped cream and buttery caramel sauce layer the love on top.", 5))
+                coldDrinks.add(Product("Chocolate Frap", R.drawable.chocolatefrap, "Rich mocha-flavored sauce meets up with chocolaty chips, milk and ice for a blender bash.",6))
+                coldDrinks.add(Product("Cold Brew", R.drawable.coldbrew, "Created by steeping medium-to-coarse ground coffee in room temperature water for 12 hours or longer.", 3))
+                coldDrinks.add(Product("Matcha Latte", R.drawable.matcha, "Leafy taste of matcha green tea powder with creamy milk and a little sugar for a flavor balance that will leave you feeling ready and raring to go.", 4))
+                coldDrinks.add(Product("Oreo Milkshake", R.drawable.oreomilkshake, "Chocolate ice cream, and oreo cookies. Topped with whipped cream with cocoa and chocolate syrup.", 7))
+                coldDrinks.add(Product("Peanut Milkshake", R.drawable.peanutmilkshake, "Vanilla ice cream, mixed with peanut butter and chocolate.", 7))
+            }
+            2 ->{
+                coldDrinks.clear()
+                coldDrinks.add(Product("Americano", R.drawable.americano,"Cafe Americano", 5))
+                coldDrinks.add(Product("Latte", R.drawable.latte,"Cafe Americano", 7))
+                coldDrinks.add(Product("Espresso", R.drawable.espresso,"Cafe Americano", 4))
+                coldDrinks.add(Product("HotChocolate", R.drawable.hotchocolate,"Cafe Americano", 5))
+            }
+            3->{
+                coldDrinks.clear()
+                coldDrinks.add(Product("BlueBerryCake",R.drawable.blueberrycake, "Blue Berry como jijos no", 7))
+                coldDrinks.add(Product("RedvelvetCake",R.drawable.redvelvetcake, "Blue Berry como jijos no", 7))
+                coldDrinks.add(Product("StrawBerryCheeseCake",R.drawable.strawberrycheesecake, "Blue Berry como jijos no", 7))
+                coldDrinks.add(Product("Tiramisu",R.drawable.tiramisu, "Blue Berry como jijos no", 7))
+            }
 
-    }*/
+            4->{
+                coldDrinks.clear()
+                coldDrinks.add(Product("ChickenCrepes",R.drawable.chickencrepes, "Blue Berry como jijos no", 7))
+                coldDrinks.add(Product("Hampaini",R.drawable.hampanini, "Blue Berry como jijos no", 7))
+                coldDrinks.add(Product("Nachos",R.drawable.nachos, "Blue Berry como jijos no", 7))
+                coldDrinks.add(Product("PhillyCheesesteak",R.drawable.phillycheesesteak, "Blue Berry como jijos no", 7))
+            }
+
+        }
+    }
 
     private class AdapadorProdutcto: BaseAdapter {
         var contexto: Context?= null

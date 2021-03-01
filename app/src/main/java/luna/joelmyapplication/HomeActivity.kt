@@ -13,21 +13,21 @@ class   HomeActivity : AppCompatActivity() {
         var intent = Intent(this, Products::class.java)
 
         button_colddrinks.setOnClickListener{
-            intent.putExtra("time", "coldDrinks")
+            intent.putExtra("type", "coldDrinks")
             startActivity(intent)
         }
 
         button_hotdrinks.setOnClickListener{
-            intent.putExtra("time", "hotDrinks")
+            intent.putExtra("type", "hotDrinks")
             startActivity(intent)
         }
         button_salties.setOnClickListener{
-            intent.putExtra("time", "salties")
+            intent.putExtra("type", "salties")
             startActivity(intent)
         }
 
         button_sweets.setOnClickListener{
-            intent.putExtra("time", "sweets")
+            intent.putExtra("type", "sweets")
             startActivity(intent)
         }
     }
