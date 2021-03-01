@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/tittle"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/light"
+        android:text="@string/our_menu"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="50dp">
+
+        <Button
+            android:id="@+id/button_colddrinks"
+            android:text="@string/cold_drinks"
+            android:fontFamily="@string/light"
+            android:textColor="@color/dustyWhite"
+            android:background="@drawable/first_gradient"
+            android:layout_marginRight="2dp"
+            android:textSize="@dimen/buttonText"
+            android:paddingVertical="@dimen/paddingButton"
+            />
+
+        <Button
+            android:id="@+id/button_hotdrinks"
+            android:text="@string/hot_drinks"
+            android:fontFamily="@string/light"
+            android:textColor="@color/dustyWhite"
+            android:background="@drawable/first_gradient"
+            android:layout_marginLeft="2dp"
+            android:textSize="@dimen/buttonText"
+            android:paddingVertical="@dimen/paddingButton"
+            />
+        <Button
+            android:id="@+id/button_sweets"
+            android:text="@string/sweets"
+            android:fontFamily="@string/light"
+            android:textColor="@color/dustyWhite"
+            android:background="@drawable/second_gradient"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="@dimen/buttonText"
+            android:paddingVertical="@dimen/paddingButton"
+            />
+        <Button
+            android:id="@+id/button_salties"
+            android:text="@string/salties"
+            android:fontFamily="@string/light"
+            android:textColor="@color/dustyWhite"
+            android:background="@drawable/second_gradient"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:textSize="@dimen/buttonText"
+            android:paddingVertical="@dimen/paddingButton"
+
+            />
+        <Button
+            android:text="@string/combos"
+            android:fontFamily="@string/light"
+            android:textColor="@color/dustyWhite"
+            android:background="@drawable/third_gradient"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="@dimen/buttonText"
+            android:paddingVertical="@dimen/paddingButton"
+            />
+
+        <Button
+            android:text="@string/personalized"
+            android:fontFamily="@string/light"
+            android:textColor="@color/dustyWhite"
+            android:background="@drawable/third_gradient"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:textSize="@dimen/buttonText"
+            android:paddingVertical="@dimen/paddingButton"
+            />
+
+
+
+    </GridLayout>
+
+
+
+</LinearLayout>
